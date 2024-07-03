@@ -1,145 +1,147 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: fonte-nav;
-    src: url('../fonts/Pokemon-Hollow.ttf');
+  font-family: fonte-nav;
+  src: url("../fonts/Pokemon-Hollow.ttf");
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-/* adicionar estilos aos elementos */
-
 .header {
-    border-bottom: 1px solid #E2E8F0;
-    background-color: var(--bg-nav-color);
-    font-family: fonte-nav;
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    align-self: center;
-    padding: 1rem;
-    width: 100%;
+  align-self: center;
+  border-bottom: 1px solid #e2e8f0;
+  background-color: var(--bg-nav-color);
+  font-family: fonte-nav;
+  padding: 1rem 10rem 1rem 10rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style-type: none;
 }
 
 .hamburger {
-    display: none;
+  display: none;
 }
 
 .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #fff;
+  background-color: #fff;
+  display: block;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  width: 25px;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 
 .nav-menu {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 6rem;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 6rem;
 }
 
 .nav-item {
-    margin-left: 4rem;
+  margin-left: 4rem;
 }
 
 .nav-item:nth-child(1) {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 .nav-link {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: var(--font-nav-color);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--font-nav-color);
 }
 
 .nav-link:hover {
-    color: #482ff7;
+  color: #482ff7;
 }
 
 .nav-logo {
-    margin: 0;
-    display: flex;
-    /* Adiciona essa linha */
-    align-items: center;
-    /* Adiciona essa linha */
-    font-size: 2rem;
-    font-weight: 500;
-    color: #fff;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
 }
 
-.nav-logo>img {
-    max-width: 30%;
-    min-width: 10rem;
-    margin: auto;
-    transition: all 1s ease-in-out;
+.nav-logo img {
+  max-width: 20%;
+  min-width: 10rem;
+  transition: all 1s ease-in-out;
 }
-
 
 @media only screen and (max-width: 850px) {
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 6rem;
-        flex-direction: column;
-        background-color: #222;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-    }
+  .header {
+    top: 0;
+    min-height: 6.05rem;
+    position: fixed;
+    padding: 1rem;
+  }
 
-    .header {
-        top: 0;
-        position: fixed;
-        min-height: 6.05rem;
-    }
+  .nav-logo img {
+    margin: auto;
+  }
 
-    .nav-link {
-        color: #fff;
-    }
+  .nav-menu {
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    background-color: #222;
+    flex-direction: column;
+    left: -100%;
+    position: fixed;
+    text-align: center;
+    top: 6rem;
+    transition: 0.3s;
+    width: 100%;
+  }
 
-    .nav-menu.active {
-        left: 0;
-    }
+  .nav-link {
+    color: #fff;
+  }
 
-    .nav-item {
-        margin: 2.5rem 0;
-    }
+  .nav-menu.active {
+    left: 0;
+  }
 
-    .nav-item:nth-child(1) {
-        margin-left: 0;
-    }
+  .nav-item {
+    margin: 2.5rem 0;
+  }
 
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
+  .nav-item:nth-child(1) {
+    margin-left: 0;
+  }
 
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
+  .hamburger {
+    cursor: pointer;
+    display: block;
+  }
 
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
 
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
 
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 }

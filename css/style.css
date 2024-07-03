@@ -64,10 +64,11 @@ section ul li,
 section ol li {
     margin-bottom: 0.5rem;
     background-color: #f0f8ff;
-    padding: 0.5rem;
+    padding: 1.5rem;
     border-radius: 5px;
     border-left: 4px solid #2a75bb;
     list-style-position: inside;
+    list-style-type: none;
 }
 
 section ul li::before {
