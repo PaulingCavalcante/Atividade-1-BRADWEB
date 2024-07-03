@@ -25,7 +25,8 @@ a {
     border-bottom: 1px solid #E2E8F0;
     background-color: var(--bg-nav-color);
     font-family: fonte-nav;
-    position: relative;
+    position: fixed;
+    top: 0;
     z-index: 999;
     align-self: center;
     padding: 1rem;
@@ -54,8 +55,6 @@ a {
 .nav-menu {
     display: flex;
     justify-content: space-between;
-    /* align-items: center;
-    text-align: center; */
     margin-right: 6rem;
 }
 
@@ -100,14 +99,19 @@ a {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 5rem;
+        top: 6rem;
         flex-direction: column;
         background-color: #222;
         width: 100%;
-        border-radius: 10px;
         text-align: center;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .header {
+        top: 0;
+        position: fixed;
+        min-height: 6.05rem;
     }
 
     .nav-link {
@@ -120,6 +124,10 @@ a {
 
     .nav-item {
         margin: 2.5rem 0;
+    }
+
+    .nav-item:nth-child(1) {
+        margin-left: 0;
     }
 
     .hamburger {
