@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="shortcut icon" href="img/pokebola.png" type="image/x-icon">
+
+    <script src="js/function.js" defer></script>
+
+    <title>Pokemon</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home" class="nav-logo"><img src="img/pokemon-logo.svg" alt="Pokemon"></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <div class="corpo" id="home">
+        <h1>Aula 05 - Listas e tabelas</h1>
+        <div>
+            <h2>Lista de compras (não ordenada)</h2>
+            <ul>
+                <li>Limão</li>
+                <li>Maçã</li>
+                <li>Leite</li>
+                <li>Pães</li>
+            </ul>
+            <h2>Lista de compras (ordenada)</h2>
+            <ol>
+                <li>Calças</li>
+                <li>Camisetas</li>
+                <li>Casacos</li>
+            </ol>
+        </div>
+        <div>
+            <h2>Tabelas</h2>
+            <table>
+                <caption>Lista de compras</caption>
+                <thead> <!-- cabeçalho -->
+                    <tr>
+                        <th>Seq</th>
+                        <th>Descrição</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody> <!-- Corpo -->
+                    <tr>
+                        <td>1.</td>
+                        <td>Maçãs</td>
+                        <td>10 unidades</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Pães</td>
+                        <td>500 g.</td>
+                    </tr>
+
+                    <tr>
+                        <td>3.</td>
+                        <td>Maionese</td>
+                        <td>2 unidades</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>Óleo</td>
+                        <td>3 unidades</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>Carne</td>
+                        <td>1.5 kg</td>
+                    </tr>
+                </tbody>
+                <tfoot> <!-- Rodape -->
+                    <tr>
+                        <td colspan="3">rodape</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div class="copyright_footer">
+            <p>&#169 2024 - Desenvolvido por Paulo Cavalcante do 1º Semestre de ADS do IFSP.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

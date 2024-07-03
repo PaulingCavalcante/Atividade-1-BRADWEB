@@ -1,0 +1,12 @@
+footer {
+    background: var(--bg-nav-color);
+    color: var(--font-nav-color);
+    padding: 1rem;
+    width: 100%;
+    z-index: 999;
+}
+
+.copyright_footer {
+    align-items: center;
+    text-align: center;
+}

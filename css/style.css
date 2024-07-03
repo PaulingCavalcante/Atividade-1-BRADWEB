@@ -1,0 +1,51 @@
+:root{
+    --bg-nav-color: #222;
+    --font-nav-color: #fff;
+}
+
+.corpo{
+    margin: 2rem 2rem;
+}
+
+body {
+    font-family: fantasy;
+}
+
+ul {
+    list-style-type: armenian;
+}
+
+caption {
+    font-size: 1.1rem;
+    color: #000;
+    font-weight: bolder;
+    margin: 1rem 0;
+}
+
+table {
+    border: solid 1px #000;
+    border-collapse: collapse;
+    border-radius: 5rem;
+    text-align: center;
+    width: 40%;
+}
+
+th {
+    border: solid 1px #000;
+    background-color: rgb(255, 222, 233);
+    padding: 1rem 1rem;
+}
+
+td {
+    border: solid 1px #000;
+    padding: 1rem 1rem;
+    empty-cells: hide;
+}
+
+td:nth-child(1){
+    background-color: rgb(255, 238, 245);
+}
+
+tbody>tr:nth-of-type(odd) {
+    background-color: rgb(255, 248, 248);
+}
