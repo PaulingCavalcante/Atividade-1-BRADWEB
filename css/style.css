@@ -1,18 +1,143 @@
-:root{
+:root {
     --bg-nav-color: #222;
     --font-nav-color: #fff;
 }
 
-.corpo{
+.corpo {
     margin: 8rem 2rem 2rem 2rem;
 }
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #ffeeab;
 }
 
 ul {
-    list-style-type: armenian;
+    list-style-type: circle;
+}
+
+h1 {
+    text-align: center;
+    color: #FFCB05;
+    font-size: 2rem;
+    -webkit-text-stroke-width: 1px;
+    /* largura da borda */
+    -webkit-text-stroke-color: #2a75bb;
+    /* cor da borda */
+}
+
+section {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+h2,
+h3 {
+    color: #2a75bb;
+}
+
+section h2,
+section h3 {
+    color: #2a75bb;
+}
+
+section p {
+    margin-bottom: 1rem;
+    background-color: #e9f5ff;
+    padding: 1rem;
+    border-left: 4px solid #2a75bb;
+    font-size: 1.1em;
+    line-height: 1.8;
+    border-radius: 5px;
+}
+
+section ul,
+section ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+section ul li,
+section ol li {
+    margin-bottom: 0.5rem;
+    background-color: #f0f8ff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border-left: 4px solid #2a75bb;
+    list-style-position: inside;
+}
+
+section ul li::before {
+    content: "•";
+    color: #2a75bb;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+section ol li {
+    counter-increment: list-counter;
+    list-style-type: none;
+    position: relative;
+}
+
+section ol li::before {
+    content: counter(list-counter) ".";
+    color: #2a75bb;
+    font-weight: bold;
+    position: absolute;
+    left: -1.5em;
+    width: 1.5em;
+}
+
+section>p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.principal {
+    margin-bottom: 1rem;
+    background-color: #e9f5ff;
+    padding: 1rem;
+    border-left: 4px solid #2a75bb;
+    font-size: 1.1em;
+    line-height: 1.8;
+    border-radius: 5px;
+}
+
+.pokemon-lista {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pokemon {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.pokemon img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.pokemon h2 {
+    margin: 0;
+    color: #333;
+}
+
+.pokemon p {
+    margin: 5px 0;
 }
 
 caption {
@@ -42,7 +167,7 @@ td {
     empty-cells: hide;
 }
 
-td:nth-child(1){
+td:nth-child(1) {
     background-color: rgb(255, 238, 245);
 }
 

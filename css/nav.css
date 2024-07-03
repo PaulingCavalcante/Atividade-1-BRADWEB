@@ -1,5 +1,3 @@
-/* CSS para redefinir todos os designs */
-
 * {
     margin: 0;
     padding: 0;
@@ -9,10 +7,6 @@
 @font-face {
     font-family: fonte-nav;
     src: url('../fonts/Pokemon-Hollow.ttf');
-}
-
-li {
-    list-style: none;
 }
 
 a {
