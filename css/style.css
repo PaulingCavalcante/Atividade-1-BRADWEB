@@ -1,6 +1,8 @@
 :root {
     --bg-nav-color: #222;
     --font-nav-color: #fff;
+    --blue-color: #2a75bb;
+    --ligth-blue-color: #82b8eb;
 }
 
 .corpo {
@@ -48,7 +50,7 @@ section p {
     margin-bottom: 1rem;
     background-color: #e9f5ff;
     padding: 1rem;
-    border-left: 4px solid #2a75bb;
+    border-left: 4px solid var(--blue-color);
     font-size: 1.1em;
     line-height: 1.8;
     border-radius: 5px;
@@ -66,7 +68,7 @@ section ol li {
     background-color: #f0f8ff;
     padding: 1.5rem;
     border-radius: 5px;
-    border-left: 4px solid #2a75bb;
+    border-left: 4px solid var(--blue-color);
     list-style-position: inside;
     list-style-type: none;
 }
@@ -104,7 +106,7 @@ section>p {
     margin-bottom: 1rem;
     background-color: #e9f5ff;
     padding: 1rem;
-    border-left: 4px solid #2a75bb;
+    border-left: 4px solid var(--blue-color);
     font-size: 1.1em;
     line-height: 1.8;
     border-radius: 5px;
@@ -149,29 +151,37 @@ caption {
 }
 
 table {
-    border: solid 1px #000;
-    border-collapse: collapse;
-    border-radius: 5rem;
-    text-align: center;
-    width: 40%;
+    border: solid 1px #000 !important;
+    border-collapse: collapse !important;
+    border-radius: 5rem !important;
+    text-align: center !important;
+    width: 60% !important;
 }
 
 th {
     border: solid 1px #000;
-    background-color: rgb(255, 222, 233);
-    padding: 1rem 1rem;
+    background-color: var(--blue-color);
+    color: white;
+    padding: 1rem 1rem !important;
 }
 
 td {
     border: solid 1px #000;
-    padding: 1rem 1rem;
-    empty-cells: hide;
+    padding: 1rem 1rem !important;
+    empty-cells: hide !important;
 }
 
 td:nth-child(1) {
-    background-color: rgb(255, 238, 245);
+    background-color: var(--ligth-blue-color);
+    color: #fff;
 }
 
 tbody>tr:nth-of-type(odd) {
-    background-color: rgb(255, 248, 248);
+    background-color: #ecf6ff;
+}
+
+table img {
+    max-width: 80px !important;
+    height: auto !important;
+    border-radius: 5px !important;
 }

@@ -4,6 +4,7 @@ footer {
     padding: 1rem;
     width: 100%;
     z-index: 999;
+    bottom: 0;
 }
 
 .copyright_footer {
