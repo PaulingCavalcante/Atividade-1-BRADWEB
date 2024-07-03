@@ -30,6 +30,7 @@ a {
     z-index: 999;
     align-self: center;
     padding: 1rem;
+    width: 100%;
 }
 
 .navbar {
