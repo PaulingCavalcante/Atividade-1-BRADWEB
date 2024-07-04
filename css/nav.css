@@ -19,7 +19,7 @@ a {
   background-color: var(--bg-nav-color);
   font-family: fonte-nav;
   padding: 1rem 10rem 1rem 10rem;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 999;

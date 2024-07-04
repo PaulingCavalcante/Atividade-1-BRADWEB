@@ -1,187 +1,204 @@
 :root {
-    --bg-nav-color: #222;
-    --font-nav-color: #fff;
-    --blue-color: #2a75bb;
-    --ligth-blue-color: #82b8eb;
+  --bg-nav-color: #222;
+  --font-nav-color: #fff;
+  --blue-color: #2a75bb;
+  --ligth-blue-color: #82b8eb;
 }
 
 .corpo {
-    margin: 8rem 2rem 2rem 2rem;
+  margin: 8rem 2rem 2rem 2rem;
 }
 
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #ffeeab;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #ffeeab;
 }
 
 ul {
-    list-style-type: circle;
+  list-style-type: circle;
 }
 
 h1 {
-    text-align: center;
-    color: #FFCB05;
-    font-size: 2rem;
-    -webkit-text-stroke-width: 1px;
-    /* largura da borda */
-    -webkit-text-stroke-color: #2a75bb;
-    /* cor da borda */
+  text-align: center;
+  color: #ffcb05;
+  font-size: 2rem;
+  -webkit-text-stroke-width: 1px;
+  /* largura da borda */
+  -webkit-text-stroke-color: #2a75bb;
+  /* cor da borda */
 }
 
 section {
-    background: white;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
 }
 
 h2,
 h3 {
-    color: #2a75bb;
+  color: #2a75bb;
 }
 
 section h2,
 section h3 {
-    color: #2a75bb;
+  color: #2a75bb;
 }
 
 section p {
-    margin-bottom: 1rem;
-    background-color: #e9f5ff;
-    padding: 1rem;
-    border-left: 4px solid var(--blue-color);
-    font-size: 1.1em;
-    line-height: 1.8;
-    border-radius: 5px;
+  margin-bottom: 1rem;
+  background-color: #e9f5ff;
+  padding: 1rem;
+  border-left: 4px solid var(--blue-color);
+  font-size: 1.1em;
+  line-height: 1.8;
+  border-radius: 5px;
 }
 
 section ul,
 section ol {
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 section ul li,
 section ol li {
-    margin-bottom: 0.5rem;
-    background-color: #f0f8ff;
-    padding: 1.5rem;
-    border-radius: 5px;
-    border-left: 4px solid var(--blue-color);
-    list-style-position: inside;
-    list-style-type: none;
+  margin-bottom: 0.5rem;
+  background-color: #f0f8ff;
+  padding: 1.5rem;
+  border-radius: 5px;
+  border-left: 4px solid var(--blue-color);
+  list-style-position: inside;
+  list-style-type: none;
 }
 
 section ul li::before {
-    content: "•";
-    color: #2a75bb;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
+  content: "•";
+  color: #2a75bb;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 section ol li {
-    counter-increment: list-counter;
-    list-style-type: none;
-    position: relative;
+  counter-increment: list-counter;
+  list-style-type: none;
+  position: relative;
 }
 
 section ol li::before {
-    content: counter(list-counter) ".";
-    color: #2a75bb;
-    font-weight: bold;
-    position: absolute;
-    left: -1.5em;
-    width: 1.5em;
+  content: counter(list-counter) ".";
+  color: #2a75bb;
+  font-weight: bold;
+  position: absolute;
+  left: -1.5em;
+  width: 1.5em;
 }
 
-section>p {
-    line-height: 1.8;
-    margin-bottom: 1rem;
+section > p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
 }
 
 .principal {
-    margin-bottom: 1rem;
-    background-color: #e9f5ff;
-    padding: 1rem;
-    border-left: 4px solid var(--blue-color);
-    font-size: 1.1em;
-    line-height: 1.8;
-    border-radius: 5px;
+  margin-bottom: 1rem;
+  background-color: #e9f5ff;
+  padding: 1rem;
+  border-left: 4px solid var(--blue-color);
+  font-size: 1.1em;
+  line-height: 1.8;
+  border-radius: 5px;
 }
 
 .pokemon-lista {
-    margin: 20px auto;
-    max-width: 600px;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .pokemon {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
 
 .pokemon img {
-    width: 100px;
-    height: 100px;
-    margin-right: 20px;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
 }
 
 .pokemon h2 {
-    margin: 0;
-    color: #333;
+  margin: 0;
+  color: #333;
 }
 
 .pokemon p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 caption {
-    font-size: 1.1rem;
-    color: #000;
-    font-weight: bolder;
-    margin: 1rem 0;
+  font-size: 1.1rem;
+  color: #000;
+  font-weight: bolder;
+  margin: 1rem 0;
 }
 
 table {
-    border: solid 1px #000 !important;
-    border-collapse: collapse !important;
-    border-radius: 5rem !important;
-    text-align: center !important;
-    width: 60% !important;
+  border: solid 1px #000;
+  border-collapse: collapse;
+  border-radius: 5rem;
+  text-align: center;
+  width: 2rem;
+  height: 20rem;
+  margin: 2rem 2rem 2rem 2rem;
 }
 
 th {
-    border: solid 1px #000;
-    background-color: var(--blue-color);
-    color: white;
-    padding: 1rem 1rem !important;
+  border: solid 1px #000;
+  background-color: var(--blue-color);
+  color: white;
+  padding: 1rem 1rem;
+  text-align: center;
 }
 
 td {
-    border: solid 1px #000;
-    padding: 1rem 1rem !important;
-    empty-cells: hide !important;
+  border: solid 1px #000;
+  padding: 1rem 1rem;
+  empty-cells: hide;
+  text-align: center;
 }
 
 td:nth-child(1) {
-    background-color: var(--ligth-blue-color);
-    color: #fff;
+  background-color: var(--ligth-blue-color);
+  color: #fff;
 }
 
-tbody>tr:nth-of-type(odd) {
-    background-color: #ecf6ff;
+tbody > tr:nth-of-type(odd) {
+  background-color: #ecf6ff;
 }
 
 table img {
-    max-width: 80px !important;
-    height: auto !important;
-    border-radius: 5px !important;
+  max-width: 80px;
+  height: auto;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.content{display:flex; margin: auto;}
+
+.rTable{width: 80%; text-align: center; margin: auto;}
+    .rTable th , .rTable td{padding: 7px 0;}
+
+@media screen and (max-width: 671px){
+    .content{width: 94%;}
+
+    .rTable thead{display:none;}
+    .rTable tbody td{display: flex; flex-direction: column;}
 }
