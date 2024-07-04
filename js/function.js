@@ -8,9 +8,6 @@ function mobileMenu() {
     navMenu.classList.toggle("active");
 }
 
-
-// when we click on hamburger icon its close 
-
 const navLink = document.querySelectorAll(".nav-link");
 
 navLink.forEach(n => n.addEventListener("click", closeMenu));

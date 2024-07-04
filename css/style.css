@@ -97,7 +97,7 @@ section ol li::before {
   width: 1.5em;
 }
 
-section > p {
+section>p {
   line-height: 1.8;
   margin-bottom: 1rem;
 }
@@ -154,10 +154,11 @@ table {
   border: solid 1px #000;
   border-collapse: collapse;
   border-radius: 5rem;
-  text-align: center;
-  width: 2rem;
+  font-size: 1.1rem;
   height: 20rem;
   margin: 2rem 2rem 2rem 2rem;
+  text-align: center;
+  width: 2rem;
 }
 
 th {
@@ -178,9 +179,10 @@ td {
 td:nth-child(1) {
   background-color: var(--ligth-blue-color);
   color: #fff;
+  font-weight: 600;
 }
 
-tbody > tr:nth-of-type(odd) {
+tbody>tr:nth-of-type(odd) {
   background-color: #ecf6ff;
 }
 
@@ -191,14 +193,63 @@ table img {
   margin: auto;
 }
 
-.content{display:flex; margin: auto;}
+.content {
+  display: flex;
+  margin: auto;
+}
 
-.rTable{width: 80%; text-align: center; margin: auto;}
-    .rTable th , .rTable td{padding: 7px 0;}
+.rTable {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
 
-@media screen and (max-width: 671px){
-    .content{width: 94%;}
+.rTable th,
+.rTable td {
+  padding: 7px 0;
+}
 
-    .rTable thead{display:none;}
-    .rTable tbody td{display: flex; flex-direction: column;}
+@media screen and (max-width: 44rem) {
+  .content {
+    width: 94%;
+  }
+
+  .rTable thead {
+    display: none;
+  }
+
+  .rTable tbody td {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rTable tbody td:nth-child(2)::before {
+    content: "Pokémon";
+    font-weight: bold;
+  }
+
+  .rTable tbody td:nth-child(3)::before {
+    content: "Tipo";
+    font-weight: bold;
+  }
+
+  .rTable tbody td:nth-child(4)::before {
+    content: "HP";
+    font-weight: bold;
+  }
+
+  .rTable tbody td:nth-child(5)::before {
+    content: "Ataque";
+    font-weight: bold;
+  }
+
+  .rTable tbody td:nth-child(6)::before {
+    content: "Defesa";
+    font-weight: bold;
+  }
+
+  .rTable tbody td:nth-child(7)::before {
+    content: "Velocidade";
+    font-weight: bold;
+  }
 }
